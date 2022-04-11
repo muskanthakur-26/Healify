@@ -1,0 +1,72 @@
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: rgb(49, 49, 49, 0.7);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("https://img.freepik.com/free-vector/hand-painted-watercolor-nature-background_23-2148941599.jpg?size=626&ext=jpg&ga=GA1.2.254494058.1643262458");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-container {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  max-width: 1600px;
+  max-height: 800px;
+  margin: 0 auto;
+}
+
+.main-container:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50px;
+  width: 20%;
+  height: 100%;
+  background: url(bg-2.png) no-repeat left bottom;
+  opacity: 0.7;
+  z-index: -1;
+}
+
+.main-container:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 30%;
+  height: 100%;
+  background: url(bg-4.png) no-repeat right bottom;
+  opacity: 0.7;
+  z-index: -1;
+}
+
+h1 {
+  padding: 30px 0 10px;
+  text-align: center;
+  font-family: "Caveat", cursive;
+  font-size: 36px;
+  color: rgb(119, 198, 152);
+  -webkit-text-stroke: 1px  rgb(85, 116, 85);
+}
+p {
+  padding-bottom: 15px;
+  margin: auto;
+  width: 70%;
+  text-align: center;
+  line-height: 1.5;
+  color: rgba(49, 49, 49, 0.8);
+}
+img{
+  border: 1px solid rgb(110, 151, 110);
+}
+.c1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap:100px;
+}
