@@ -1,0 +1,130 @@
+:root{
+  --path-time-color: #09BC8A;
+  --timer-height: 500px;
+  --timer-width: 500px;
+}
+
+@media (max-width: 500px) { 
+  :root {
+    --timer-height: 100vw;
+    --timer-width: 100vw;
+  }
+}
+
+/* Sets the containers height and width */
+#base-timer {
+  position: relative;
+  margin: auto;
+  width: var(--timer-width);
+  height: var(--timer-height);
+  font-family: 'Courier Prime', monospace;
+  color: white;
+ }
+
+/* Removes SVG styling that would hide the time label */
+#base-timer .circle {
+  fill: none;
+  stroke: none;
+ }
+
+ /* The SVG path that displays the timer's progress */
+#base-timer .path-elapsed {
+  stroke-width: 5px;
+  stroke: white;
+ }
+
+.inside-timer{
+  position: absolute;
+     
+  /* Size should match the parent container */
+  width: var(--timer-width);
+  height: var(--timer-height);
+  
+  /* Keep the label aligned to the top */
+  top: 0;
+  
+  /* Create a grid centers content vertically and horizontally */
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+#current-interval{
+  grid-column: 2 / 3;
+  font-size: 35px;
+  text-align: center;
+  margin: 40% auto auto auto;
+}
+
+ #time-left-display{
+  /* Sort of an arbitrary number; adjust to your liking */
+  font-size: 48px;
+  grid-column: 2 / 3;
+  margin: auto;
+  
+ }
+
+.timer-controls{
+  grid-column: 2 / 3;
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+ #path-remaining{
+  /* Just as thick as the original ring */
+  stroke-width: 5px;
+
+  /* Rounds the line endings to create a seamless circle */
+  stroke-linecap: round;
+
+  /* Makes sure the animation starts at the top of the circle */
+  transform: rotate(90deg);
+  transform-origin: center;
+
+  /* One second aligns with the speed of the countdown timer */
+  transition: all 0.5s linear;
+
+  /* Allows the ring to change color when the color value updates */
+  stroke: currentColor;
+
+  /* stroke-dasharray:  283 283; */
+
+  color: var(--path-time-color);
+}
+
+.timer-controls button {
+    box-sizing: border-box;
+    margin: 0 auto 0 auto;
+    padding:1px;
+    border: 2px solid white;
+    border-radius: 20%;
+    width: 40px;
+    height: 40px;
+    background: #172A3A;
+    color: #ffffff;
+    cursor: pointer;
+    /* text-align: center; */
+    transition: background 250ms ease-in-out, 
+                transform 150ms ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+@media (min-width: 500px) { 
+  .timer-controls button{
+    margin: 40% auto auto auto;
+  }
+}
+
+.timer-controls button::-moz-focus-inner{
+  border:none;
+}
+
+.timer-controls button:hover{
+    background: #0053ba;
+}
+
+svg {
+    /* Flips the svg and makes the animation to move left-to-right */
+  transform: scaleX(-1);
+}
