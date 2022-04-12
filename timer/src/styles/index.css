@@ -1,0 +1,66 @@
+#time-selector{
+  font-size: 1.2rem;
+  color: white;
+}
+h2{
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  font-size: 2rem;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  background-image: url("https://img.freepik.com/free-vector/hand-painted-watercolor-nature-background_23-2148941599.jpg?size=626&ext=jpg&ga=GA1.2.254494058.1643262458");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+input{
+  width: 70px;
+}
+
+input, select{
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+}
+
+#start{
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+  height: auto;
+  width: auto;
+  margin-top: 20px;
+}
+
+header {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  background-color: rgb(85, 116, 85);
+  
+}
+
+main {
+  font-family: 'Montserrat', sans-serif;
+  text-align: left;
+  font-size: 1.1rem;
+  background-color: white;
+  padding: 1rem;
+}
+
+#first-para{
+  margin: 0;
+}
+
+main p{
+  color: black;
+}
+
+@media (min-width: 1100px) { 
+  main {
+    margin: 0 21% auto 21%;
+  }
+}
