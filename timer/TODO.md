@@ -1,0 +1,21 @@
+- [x] Have stop reset options to what user specified
+- [x] Look into how to make events not do default behaviour https://stackoverflow.com/questions/128923/whats-the-effect-of-adding-return-false-to-a-click-event-listener
+- [x] Look into having a smaller timer text eg. 4:25:10 or 4h 25m 10s rather than 4 hours 25 minutes 10 seconds
+- [x] Don't switch between rest and work right away when timer ends, wait for user feedback
+- [x] Get audio playing at the end of the timer
+- [x] Add a pause button
+- [x] Create nice timer circle
+- [x] Make website robust to user inputs
+- [x] Look into importing vs just having a script tag above
+- [x] Implement fall back if user does not allow notifications
+- [x] Make notifications and controls in browser play nice with each other
+- [x] Use class to encapsulate the timer
+- [x] Make start page look nice
+- [x] Center up timer page and make it look nice
+- [ ] Get safari (iOS) working, look into broader cross-browser support
+- [x] Get mobile to look nice
+- [ ] Tidy up CSS
+- [ ] Get a favicon
+- [x] Convert website into SPA
+- [ ] Add some nice transitions when timer appears
+- [x] Make run html through validator and fix issues
